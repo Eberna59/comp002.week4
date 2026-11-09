@@ -47,3 +47,18 @@ function reverseArray(myArray) {
 }
 
 console.log(reverseArray([1, 2, 3, 4, 5]));
+
+
+///
+
+const reverseArrayInPlace = (array) => {
+    let reverse = [];
+    for (let element of array) {
+        reverse.unshift(element)
+    }
+    return reverse;
+
+    const array = [1, 2, 3, 4, 5];
+
+    console.log(reverseArrayInPlace(array));
+}
